@@ -1,0 +1,175 @@
+.photo {
+    &__background {
+        background: {
+            image: url('../images/IMAGE(6).png');
+            repeat: no-repeat;
+            size: cover;
+            position: center center;
+            attachment: fixed;
+        }
+        width: 100vw;
+        height: 600px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    @media screen and (max-width: 1205px) {
+        &__background {
+            justify-content: center;
+            align-items: center;
+            padding: 0 10px;
+        }
+    }
+    &__background-block {
+        margin-right: 60px;
+    }
+    &__background-title {
+        font-family: $font-stack;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__background-pragraph {
+        font-family: $font-stack;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        color: #C0C0C0;
+        max-width: 298px;
+    }
+    &__container {
+        display: flex;
+        width: 100vw;
+    }
+    @media screen and (max-width: 1205px) {
+        &__container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__first-block {
+        width: 50%;
+        height: 540px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 1205px) {
+        &__first-block {
+            width: 100%;
+            padding: 0 10px;
+        }
+    }
+    &__block-intro {
+        font-family: $font-stack;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #C0C0C0;
+        margin-bottom: 6px;
+    }
+    &__block-title {
+        font-family: $font-stack;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 114%;
+        color: #FFFFFF;
+        display: flex;
+        margin-bottom: 14px;
+    }
+    &__block-paragraph {
+        font-family: $font-stack;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        color: #FFFFFF;
+        max-width: 514px;
+        margin-bottom: 20px;
+    }
+    &__block-button {
+        font-family: $font-stack;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        letter-spacing: 0.4px;
+        color: #000000;
+        padding: 9px 20px 13px 20px;
+        border-radius: 15px;
+        border: none;
+        color: inherit;
+        background-color: transparent;
+        background-color: #fff;
+        width: 152px;
+        cursor: pointer;
+    }
+    &__block-button:hover {
+        background-color: gray;
+    }
+    &__second-block {
+        background: {
+            image: url('../images/frame(6).png');
+            repeat: no-repeat;
+            size: cover;
+        }
+        width: 50%;
+        height: 540px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+    }
+    @media screen and (max-width: 1205px) {
+        &__second-block {
+            width: 100%;
+            background-position: center center;
+            justify-content: center;
+            padding: 0 10px;
+        }
+    }
+    &__block-images {
+        margin: 0 40px 40px 0;
+    }
+    @media screen and (max-width: 1205px) {
+        &__block-images {
+            margin: 0 0 40px 0;
+        }
+    }
+    &__second-background {
+        background: {
+            image: url('../images/IMAGE(7).png');
+            repeat: no-repeat;
+            size: cover;
+            position: center center;
+            attachment: fixed;
+        }
+        width: 100vw;
+        height: 600px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    @media screen and (max-width: 1205px) {
+        &__second-background {
+            justify-content: center;
+            align-items: center;
+            padding: 0 10px;
+        }
+    }
+    &__block-image {
+        transition: all .2s ease-in-out;
+    }
+    &__block-image:hover {
+        opacity: .5;
+    }
+}
